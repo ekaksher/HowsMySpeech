@@ -13,3 +13,5 @@ Followed A Lexical Based Approach To Train The Model, Achieving An Accuracy Of 8
 <strike>1. Confidence Of Prediction Using Probability Prediction<br></strike>
 2. Add Data To Train On Neutral Samples As Well.<br>
 3. Provide Web App Support To Check Analysis For A Twitter Hashtag Or Keyword.
+<br>
+<p><b>If HerokuApp Gives An Timeout Error Refresh The Page Once.</b></p>

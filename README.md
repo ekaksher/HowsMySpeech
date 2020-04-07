@@ -7,8 +7,7 @@ Followed A Lexical Based Approach To Train The Model, Achieving An Accuracy Of 8
 <br>
 <p>Run pip3/pip install -r requirements.txt (Python 3)</p>
 <br>
-<p>Download The Sentiment140 Dataset From<a href = "https://www.kaggle.com/kazanova/sentiment140/download">here</a></p>
-<br>
+<p>Download The Sentiment140 Dataset From<a href = "https://www.kaggle.com/kazanova/sentiment140/download"> here</a></p>
 <h3><b> Upcoming Changes</b></h3>
 <br>
 <strike>1. Confidence Of Prediction Using Probability Prediction<br></strike>

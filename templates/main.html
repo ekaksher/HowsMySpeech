@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "icon" href ="{{url_for('static',filename='../static/assets/favicon.png')}}" 
+        type = "image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='../static/css/main.css')}}">
+        <title>
+            Sentiment Analysis!
+        </title>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </head>
+    <body id="bgbody">
+        <center><div>
+            <h1 class="display-4">Sentiment Analysis</h1>
+        </div></center>
+        <div id="form-div">
+            <form action="{{url_for('main')}}" method="POST">
+                <div class="form-group">
+                    <center><label for="exampleFormControlTextarea1"></label></center>
+                    <center><textarea name='text' class="form-control w-50" id="exampleFormControlTextarea1" rows="5"placeholder="Place Your Text Here..."  required>{{original_input}}</textarea></center>
+                </div>
+                <center><span><input type="submit" class="btn btn-success"></span>
+                <span><a href="/"><input type="button"value="Clear" class="btn btn-secondary"></a></span>
+                </center>
+        </form>
+        <br>
+        <center><span><a class="github-button" href="https://github.com/ekaksher/HowsMySpeech" data-icon="octicon-star" aria-label="Star ekaksher/HowsMySpeech on GitHub">Star</a></span>
+        <span><a class="github-button" href="https://github.com/ekaksher/HowsMySpeech/fork" data-icon="octicon-repo-forked" aria-label="Fork ekaksher/HowsMySpeech on GitHub">Fork</a></span>
+        </center>    
+        </div>
+        <div class="result jumbotron" align="center">
+            {% if result%}
+            <style>
+                #prediction{
+                    color: {{colors}};
+                    font-size: 50px;
+                }
+            </style> 
+            <p id="prediction">
+                {{result}}
+            </p>
+            <h5 style="color: white;">Confidence : {{confidence}} %</h5>
+            <hr class="my-4" id="hrrule" size="2px">
+            <form class="range-field my-4 w-25" action="{{url_for('feedback')}}" method="POST">
+                <p style="color: cyan;">Model Feeback </p><br>
+            <div class="form-group">
+                <input type="range" min="0" max="100" name="slider">
+            <center><input type="submit" class="btn btn-success"></center>
+            </form>
+            {%endif%}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+h1{
+    color: deepskyblue;
+    margin-top: 50px;
+}
+body{
+    background-color: rgb(15, 15, 15);
+}
+#form-div{
+    margin-top: 170px;
+    margin-bottom: 30px;
+}
+.jumbotron{
+    background-color: rgb(15, 15, 15);
+}
+#hrrule{
+    height: 1px;
+    color: lavender;
+    background-color: lavender;
+    border: none;
+}

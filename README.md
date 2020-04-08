@@ -1,7 +1,7 @@
 # HowsMySpeech
 A Sentiment Analysis Model Trained Using Sentiment140 Dataset.
 Currently The Model Is Only Capable Of Classifying Data Into Positive Or Negative Class.
-Followed A Lexical Based Approach To Train The Model, Achieving An Accuracy Of 81.38% On Test Data.
+Followed A Lexical Based Approach To Train The Model, Achieving An Accuracy Of 82.28% On Test Data.
 <br>
 # Requirements
 <br>

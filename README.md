@@ -15,4 +15,3 @@ Followed A Lexical Based Approach To Train The Model, Achieving An Accuracy Of 8
 3. Provide Web App Support To Check Analysis For A Twitter Hashtag Or Keyword.
 <br>
 
-<p><b>If HerokuApp Gives A Timeout Error Refresh The Page Once.</b></p>
